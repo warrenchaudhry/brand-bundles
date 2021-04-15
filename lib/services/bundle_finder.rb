@@ -1,13 +1,11 @@
 require_relative '../errors'
 class BundleFinder
   attr_reader :order, :order_qty, :code, :bundles
-  attr_accessor :best_item_bundles
 
   def initialize(order:)
     @order = order
     @order_qty = order.quantity
     @code = order.code
-    @best_item_bundles = { @code => [] }
   end
 
   def execute
@@ -49,7 +47,7 @@ class BundleFinder
 
       best_remainder = get_best_bundles(remainder, bundle_quantities.drop(idx))
 
-      next if best_remainder.nil?# || best_remainder.empty?
+      next if best_remainder.nil?
 
       this_solution = [bundle_qty] + best_remainder
 

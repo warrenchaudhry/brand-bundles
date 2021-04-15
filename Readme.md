@@ -59,7 +59,7 @@ important)
 ### Prerequisites:
 You should have the following installed to be able to test this application locally:
 * rvm
-* ruby 2.6.6 or higher
+* ruby 2.6.6
 
 ### Installation
 
@@ -69,7 +69,7 @@ You should have the following installed to be able to test this application loca
 
 * Install Ruby
 
-  `rvm use install ruby-2.6.6`
+  `rvm install ruby-2.6.6`
 
 * Install Bundler (gem management tool).
   ```

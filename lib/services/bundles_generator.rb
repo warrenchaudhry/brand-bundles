@@ -9,7 +9,7 @@ class BundlesGenerator
     bundles['products'].each do |data|
       product = Product.new(name: data['name'], code: data['code'])
       data['bundles'].each do |bundle_info|
-        ProductBundle.new(product: product, quantity: Integer(bundle_info['quantity']), amount: BigDecimal(bundle_info['amount'], 2))
+        ProductBundle.new(product: product, quantity: Integer(bundle_info['quantity']), amount: bundle_info['amount'])
       end
     end
   end

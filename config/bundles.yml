@@ -1,0 +1,27 @@
+---
+products:
+  - code: IMG
+    name: Image
+    bundles:
+      - quantity: 5
+        amount: 450
+      - quantity: 10
+        amount: 800
+  - code: FLAC
+    name: Audio
+    bundles:
+      - quantity: 3
+        amount: 427.50
+      - quantity: 6
+        amount: 810
+      - quantity: 9
+        amount: 1147.50
+  - code: VID
+    name: Video
+    bundles:
+      - quantity: 3
+        amount: 570
+      - quantity: 5
+        amount: 900
+      - quantity: 9
+        amount: 1530
